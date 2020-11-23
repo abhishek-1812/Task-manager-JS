@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager By JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <div class=" container-fluid core">
+            <h1 class="text-center">TASK MANAGEMENT SYSTEM</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container main">
+            <label for="task">Enter Task:</label>
+            <input type="text" id="enterTask" name="task" placeholder="Please Enter Your Task"><br>
+            <input type="button" class="btn btn-danger btns" value="ADD TASK" onclick="addtask()"/>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="todo">
+                <h4>TO-DO</h4>
+                <table class="table table-bordered color">
+                    <thead>
+                        <tr>
+                            <th>check</th>                       
+                            <th>Task-Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                 </table>
+                <p id="todoList">
+                </p>
+            </div>
+            <div class="doneTask">
+                <h4>COMPLETED-TASK</h4>
+                <table class="table table-bordered color">
+                    <thead>
+                        <tr>
+                            <th>check</th>
+                            <th>Task-Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                 </table>
+                <p id="completeList"></p>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+</body>
+</html>
